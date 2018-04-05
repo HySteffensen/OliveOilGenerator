@@ -9,14 +9,14 @@ public class Main {
 
     public static void main(String[] args) {
         List<Olive> olives= new ArrayList<>();
-        Olive olive1 = new Olive();
-        olives.add(olive1);
-        Olive olive2 = new Olive();
-        olive2.setOil(1);
-        olives.add(olive2);
-        Olive olive3 = new Olive();
-        olive3.setOil(4);
-        olives.add(olive3);
+        olives.add(new Olive("Kalamata", 0x2E0854, 3));
+        olives.add(new Olive("Kalamata", 0x2E0854, 3));
+        olives.add(new Olive("Ligurian", 0x00000, 2));
+        olives.add(new Olive("Ligurian", 0x00000, 2));
+        olives.add(new Olive("Ligurian", 0x00000, 2));
+        olives.add(new Olive("Ligurian", 0x00000, 2));
+
+
 
         OlivePress olivePress = new OlivePress();
         int totalOil = olivePress.getOil(olives);
