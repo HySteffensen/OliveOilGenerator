@@ -16,8 +16,7 @@ public class Main {
         Olive olive3 = new Olive();
         olives.add(olive3);
 
-        for (Olive o : olives) {
-            System.out.println("o.name = " + o.name);
-        }
+        OlivePress olivePress = new OlivePress();
+        olivePress.getOil(olives);
     }
 }
